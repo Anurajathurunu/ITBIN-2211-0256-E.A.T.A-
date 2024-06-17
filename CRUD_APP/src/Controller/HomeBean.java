@@ -12,16 +12,15 @@ import java.util.Date;
  * @author THURUNU
  */
 public class HomeBean {
-    private int id;
-    private String firstName;
+    
+     private String firstName;
     private String lastName;
     private String gender;
     private String city;
     private Date date;
     private String address;
 
-    public HomeBean(int id,String firstName, String lastName, String gender, String city, Date date, String address) {
-        this.id = id;
+    public HomeBean(String firstName, String lastName, String gender, String city, Date date, String address) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
@@ -30,14 +29,10 @@ public class HomeBean {
         this.address = address;
     }
 
-    public int getId() {
-        return id;
+    HomeBean(int id, String firstName, String lastname, String gender, String city, java.sql.Date date, String address) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-    
     public String getFirstName() {
         return firstName;
     }
